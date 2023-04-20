@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Bole Hmm"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="bolehmm@gmail.com"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/changeProfilePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Promeni profilnu sliku" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changeProfilePic"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+
+        <ImageView
+            android:id="@+id/picture1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/koznazna" />
+
+        <ImageView
+            android:id="@+id/picture2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/spojnice" />
+
+        <ImageView
+            android:id="@+id/picture3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/asocijacije" />
+
+        <ImageView
+            android:id="@+id/picture4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/skocko" />
+
+        <ImageView
+            android:id="@+id/picture5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/korakpokorak" />
+
+        <ImageView
+            android:id="@+id/picture6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mojbroj" />
+
+    </GridLayout>
+
+</RelativeLayout>
