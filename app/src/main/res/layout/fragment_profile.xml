@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/background">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/profilePicture"
@@ -60,38 +61,37 @@
             android:id="@+id/picture1"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/koznazna" />
+            android:src="@drawable/koznazna"/>
 
         <ImageView
             android:id="@+id/picture2"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/spojnice" />
+            android:src="@drawable/spojnice"/>
 
         <ImageView
             android:id="@+id/picture3"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/asocijacije" />
+            android:src="@drawable/asocijacije"/>
 
         <ImageView
             android:id="@+id/picture4"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/skocko" />
+            android:src="@drawable/skocko"/>
 
         <ImageView
             android:id="@+id/picture5"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/korakpokorak" />
+            android:src="@drawable/korakpokorak"/>
 
         <ImageView
             android:id="@+id/picture6"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/mojbroj" />
-
+            android:src="@drawable/mojbroj"/>
     </GridLayout>
 
 </RelativeLayout>

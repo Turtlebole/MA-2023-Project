@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:text="Dobrodosao nazad, Username"
         android:textSize="24sp"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:layout_marginTop="24dp"
         android:layout_centerHorizontal="true" />
 
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:text="Tokens: 10"
         android:textSize="18sp"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:layout_below="@id/userProfile"
         android:layout_marginTop="16dp"
         android:layout_centerHorizontal="true" />
@@ -39,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@android:color/white"
+        android:background="#1f1e24"
         app:menu="@menu/" />
 
 </RelativeLayout>
