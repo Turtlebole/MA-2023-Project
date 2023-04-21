@@ -82,6 +82,15 @@
             android:textSize="24sp"
             android:text="4" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numbersMenuDigits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
         <Button
             android:id="@+id/num5"
             android:layout_width="0dp"
@@ -168,7 +177,7 @@
             android:layout_column="1"
             android:text=")"
             android:textSize="24sp"
-           />
+            />
 
         <Button
             android:id="@+id/resetButton"
