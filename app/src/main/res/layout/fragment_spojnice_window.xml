@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/leftBoard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS1" />
+
+            <Button
+                android:id="@+id/buttonLeft2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS2" />
+
+            <Button
+                android:id="@+id/buttonLeft3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS3" />
+
+            <Button
+                android:id="@+id/buttonLeft4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS4" />
+
+            <Button
+                android:id="@+id/buttonLeft5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS5" />
+
+            <Button
+                android:id="@+id/buttonLeft6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS6" />
+
+            <Button
+                android:id="@+id/buttonLeft7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS7" />
+
+            <Button
+                android:id="@+id/buttonLeft8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS8" />
+
+            <Button
+                android:id="@+id/buttonLeft9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS9" />
+
+            <Button
+                android:id="@+id/buttonLeft10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightBoard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS1" />
+
+            <Button
+                android:id="@+id/buttonRight2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS2" />
+
+            <Button
+                android:id="@+id/buttonRight3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS3" />
+
+            <Button
+                android:id="@+id/buttonRight4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS4" />
+
+            <Button
+                android:id="@+id/buttonRight5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS5" />
+
+            <Button
+                android:id="@+id/buttonRight6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS6" />
+
+            <Button
+                android:id="@+id/buttonRight7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS7" />
+
+            <Button
+                android:id="@+id/buttonRight8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS8" />
+
+            <Button
+                android:id="@+id/buttonRight9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOS9" />
+
+            <Button
+                android:id="@+id/buttonRight10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRIMER POLJA ZA UNOSs10" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pointsLeftUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bodovi levo"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp" />
+
+
+    <TextView
+        android:id="@+id/pointsRightUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bodovi desno"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp" />
+
+</RelativeLayout>
