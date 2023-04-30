@@ -12,6 +12,48 @@
         android:theme="@style/Theme.Mobilneprojekat"
         tools:targetApi="31">
         <activity
+            android:name=".FriendList"
+            android:exported="false" />
+        <activity
+            android:name=".KorakPoKorak"
+            android:exported="false" />
+        <activity
+            android:name=".StatistikaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Skocko"
+            android:exported="false" />
+        <activity
+            android:name=".Spojnice"
+            android:exported="false" />
+        <activity
+            android:name=".Asocijacije"
+            android:exported="false" />
+        <activity
+            android:name=".Main"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyLeaderboard"
+            android:exported="false" />
+        <activity
+            android:name=".MonthlyLeaderboard"
+            android:exported="false" />
+        <activity
+            android:name=".MojBroj"
+            android:exported="false" />
+        <activity
+            android:name=".KoZnaZna"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">

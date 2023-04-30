@@ -4,7 +4,8 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="?attr/actionBarSize">
+    android:paddingTop="?attr/actionBarSize"
+    android:background="@drawable/background">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
@@ -17,6 +18,84 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/bottom_nav_menu" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <TextView
+            android:id="@+id/userWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dobrodosao nazad, Username"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/userProfile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/userWelcome"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/tokenCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tokeni: 10"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/userProfile"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/rankCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rank: Veliki Krkan"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/tokenCounter"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/brojZvezdicaCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broj zvezdica: 445"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/rankCounter"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/zapocniIgruButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Započni igru"
+            android:textSize="18sp"
+            android:layout_below="@id/brojZvezdicaCounter"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationBarMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#1f1e24"
+            app:menu="@menu/" />
+
+    </RelativeLayout>
+
 
     <fragment
         android:id="@+id/nav_host_fragment_activity_main"

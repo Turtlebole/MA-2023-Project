@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearAB1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonA1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A1"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/buttonB1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearAB2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@id/linearAB1">
+
+        <Button
+            android:id="@+id/buttonA2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/buttonB2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B2"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearAB3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        app:layout_constraintTop_toBottomOf="@id/linearAB2">
+
+        <Button
+            android:id="@+id/buttonA3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A3"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="40dp"/>
+
+        <Button
+            android:id="@+id/buttonB3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearAB4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        app:layout_constraintTop_toBottomOf="@id/linearAB3">
+
+        <Button
+            android:id="@+id/buttonA4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="A4"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/buttonB4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B4"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="50dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearResenjeAB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        app:layout_constraintTop_toBottomOf="@id/linearAB4">
+
+        <Button
+            android:id="@+id/buttonSolutionA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Resenje A"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/buttonSolutionB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Resenje B"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="50dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/solutionRowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        app:layout_constraintTop_toBottomOf="@id/linearResenjeAB">
+
+        <Button
+            android:id="@+id/buttonKonacno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Konacno"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearResenjeCD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp">
+
+        <Button
+            android:id="@+id/buttonResenjeC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Resenje C"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonResenjeD"/>
+
+        <Button
+            android:id="@+id/buttonResenjeD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Resenje D"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="50dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonResenjeC"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCD4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp">
+
+        <Button
+            android:id="@+id/buttonC4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C4"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonD4"/>
+
+        <Button
+            android:id="@+id/buttonD4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="D4"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="50dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonC4"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCD3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp">
+
+        <Button
+            android:id="@+id/buttonC3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C3"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonD3"/>
+
+        <Button
+            android:id="@+id/buttonD3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="D3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            app:layout_constraintStart_toEndOf="@+id/buttonC3"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCD2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp">
+
+        <Button
+            android:id="@+id/buttonC2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C2"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"/>
+
+        <Button
+            android:id="@+id/buttonD2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="D2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearCD1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="560dp">
+
+        <Button
+            android:id="@+id/buttonC1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C1"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/buttonD1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="D1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pointsLeftUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bodovi levo"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp" />
+
+
+    <TextView
+        android:id="@+id/pointsRightUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bodovi desno"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp" />
+
+
+</RelativeLayout>

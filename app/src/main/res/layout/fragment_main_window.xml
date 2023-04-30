@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/userWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dobrodosao nazad, Username"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/userProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/userWelcome"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/tokenCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tokens: 10"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/userProfile"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/rankCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rank: 5"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/tokenCounter"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/brojZvezdicaCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broj zvezdica: 59"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/rankCounter"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brojZvezdicaCounter"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp">
+
+        <ImageView
+            android:id="@+id/picture1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/koznazna"/>
+
+        <ImageView
+            android:id="@+id/picture2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/spojnice"/>
+
+        <ImageView
+            android:id="@+id/picture3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/asocijacije"/>
+
+        <ImageView
+            android:id="@+id/picture4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/skocko"/>
+
+        <ImageView
+            android:id="@+id/picture5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/korakpokorak"/>
+
+        <ImageView
+            android:id="@+id/picture6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mojbroj"/>
+    </GridLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationBarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#1f1e24"
+        app:menu="@menu/" />
+
+</RelativeLayout>
