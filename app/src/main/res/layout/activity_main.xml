@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,74 +12,79 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        android:background="@drawable/background">
+        android:background="@drawable/background"
+        tools:layout_editor_absoluteX="-126dp"
+        tools:layout_editor_absoluteY="-51dp">
 
         <TextView
             android:id="@+id/userWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dobrodošao nazad, Username"
-            android:textSize="24sp"
-            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="24dp"
-            android:layout_centerHorizontal="true" />
+            android:text="Dobrodošao nazad, Username"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
         <ImageView
             android:id="@+id/userProfile"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_below="@id/userWelcome"
-            android:layout_marginTop="16dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
             android:src="@drawable/profile" />
 
         <TextView
             android:id="@+id/tokenCounter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tokeni: 10"
-            android:textSize="18sp"
-            android:textColor="@android:color/white"
             android:layout_below="@id/userProfile"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
-            android:layout_centerHorizontal="true" />
+            android:text="Tokeni: 10"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/rankCounter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rank: Veliki Krkan"
-            android:textSize="18sp"
-            android:textColor="@android:color/white"
             android:layout_below="@id/tokenCounter"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
-            android:layout_centerHorizontal="true" />
+            android:text="Rank: Veliki Krkan"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/brojZvezdicaCounter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Broj zvezdica: 445"
-            android:textSize="18sp"
-            android:textColor="@android:color/white"
             android:layout_below="@id/rankCounter"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
-            android:layout_centerHorizontal="true" />
+            android:text="Broj zvezdica: 445"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/zapocniIgruButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Započni igru"
-            android:textSize="18sp"
             android:layout_below="@id/brojZvezdicaCounter"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
-            android:layout_centerHorizontal="true" />
+            android:text="Započni igru"
+            android:textSize="18sp" />
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/zapocniIgruButton"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="true"
+            android:clipChildren="false"
+            android:clipToPadding="false"
             android:columnCount="3"
             android:columnOrderPreserved="false"
             android:rowCount="1"
@@ -86,20 +92,30 @@
 
             <Button
                 android:id="@+id/picture1"
-                android:layout_height="100dp"
+                android:layout_height="70dp"
+                android:layout_row="0"
+                android:layout_column="0"
                 android:layout_columnWeight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:src="@drawable/koznazna" />
 
             <Button
                 android:id="@+id/picture2"
-                android:layout_height="100dp"
+                android:layout_height="70dp"
                 android:layout_columnWeight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:src="@drawable/spojnice" />
 
             <Button
                 android:id="@+id/picture3"
-                android:layout_height="100dp"
+                android:layout_height="70dp"
+                android:layout_row="0"
+                android:layout_column="2"
                 android:layout_columnWeight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
                 android:src="@drawable/asocijacije" />
 
         </GridLayout>
