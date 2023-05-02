@@ -57,53 +57,59 @@
         android:rowCount="2"
         android:useDefaultMargins="true">
 
-        <Button
-            android:id="@+id/picture1"
+        <ImageView
+            android:id="@+id/KoZnaZnaButton"
             android:layout_width="108dp"
             android:layout_height="108dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
-            android:src="@drawable/koznazna" />
+            android:src="@drawable/koznazna"
+            android:scaleType="fitXY"/>
 
-        <Button
+        <ImageView
             android:id="@+id/picture2"
             android:layout_width="108dp"
             android:layout_height="108dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
-            android:src="@drawable/spojnice" />
+            android:src="@drawable/spojnice"
+            android:scaleType="fitXY"/>
 
-        <Button
+        <ImageView
             android:id="@+id/picture3"
             android:layout_width="108dp"
             android:layout_height="108dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
-            android:src="@drawable/asocijacije" />
+            android:src="@drawable/asocijacije"
+            android:scaleType="fitXY"/>
 
-        <Button
+        <ImageView
             android:id="@+id/picture4"
             android:layout_width="108dp"
             android:layout_height="108dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
-            android:src="@drawable/skocko" />
+            android:src="@drawable/skocko"
+            android:scaleType="fitXY"/>
 
-        <Button
+        <ImageView
             android:id="@+id/picture5"
             android:layout_width="108dp"
             android:layout_height="108dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
-            android:src="@drawable/korakpokorak" />
+            android:src="@drawable/korakpokorak"
+            android:scaleType="fitXY"/>
 
-        <Button
+        <ImageView
             android:id="@+id/picture6"
             android:layout_width="108dp"
             android:layout_height="108dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
-            android:src="@drawable/mojbroj" />
+            android:src="@drawable/mojbroj"
+            android:scaleType="fitXY"/>
     </GridLayout>
 
     <Button
@@ -114,7 +120,8 @@
         android:insetTop="0dp"
         android:insetBottom="0dp"
         android:text="Button"
-        tools:text="MENU" />
+        tools:text="MENU"
+        />
 
 
 </RelativeLayout>
