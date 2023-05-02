@@ -26,9 +26,13 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
+<<<<<<< HEAD
 
             tools:srcCompat="@drawable/profile" />
 
+=======
+            tools:srcCompat="@tools:sample/avatars" />
+>>>>>>> b1b42c9780bfdcf44d1bf6b5cc6d5dc44c881738
 
         <TextView
             android:id="@+id/textView2"
@@ -36,9 +40,13 @@
             android:layout_height="47dp"
             android:layout_marginLeft="156dp"
             android:layout_marginTop="4dp"
+<<<<<<< HEAD
             android:text="Bole Hmm"
             android:textColor="@color/white"/>
 
+=======
+            android:text="TextView" />
+>>>>>>> b1b42c9780bfdcf44d1bf6b5cc6d5dc44c881738
 
         <ImageView
             android:id="@+id/imageView4"
