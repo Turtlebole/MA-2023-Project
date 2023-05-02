@@ -150,14 +150,4 @@
         android:insetBottom="0dp"
         android:text="MENU"/>
 
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="81dp"
-        android:layout_gravity="bottom"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="Button" />
-
 </LinearLayout>
