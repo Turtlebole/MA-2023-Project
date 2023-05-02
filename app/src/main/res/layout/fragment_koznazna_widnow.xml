@@ -5,39 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:padding="24dp"
     >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/koZnaZna"
-        android:text="Ko zna zna"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="40dp"
-        android:layout_centerHorizontal="true"
-        />
-
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Ko zna zna"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
         android:id="@+id/questionField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/confirm"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="304dp"
         android:text="Pitanje"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24dp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:layout_margin="20dp"
-        android:layout_above="@id/optionsField">
+        android:textStyle="bold">
+
     </TextView>
 
     <LinearLayout
+        android:id="@+id/optionsField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/optionsField"
-        android:layout_centerInParent="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="150dp">
 
         <Button
             android:id="@+id/opt1"
@@ -93,4 +94,24 @@
         android:layout_marginTop="16dp"
         android:text="Nastavi dalje" />
 
+    <TextView
+        android:id="@+id/pointsLeftUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bodovi levo"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp" />
+
+
+    <TextView
+        android:id="@+id/pointsRightUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bodovi desno"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp" />
 </RelativeLayout>

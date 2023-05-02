@@ -18,14 +18,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.85"
-            android:background="@android:color/holo_green_dark"/>
+            android:background="@android:color/darker_gray"/>
         <TextView
             android:id="@+id/BodoviPrvoPitanje"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:layout_marginLeft="3dp"
-            android:background="@android:color/holo_blue_dark"/>
+            android:background="#FF018786"/>
 
     </LinearLayout>
 
@@ -42,14 +42,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.85"
-            android:background="@android:color/holo_green_dark"/>
+            android:background="@android:color/darker_gray"/>
         <TextView
             android:id="@+id/BodoviDrugoPitanje"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:layout_marginLeft="3dp"
-            android:background="@android:color/holo_blue_dark"/>
+            android:background="#FF018786"/>
 
     </LinearLayout>
 
@@ -66,14 +66,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.85"
-            android:background="@android:color/holo_green_dark"/>
+            android:background="@android:color/darker_gray"/>
         <TextView
             android:id="@+id/BodoviTrecePitanje"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:layout_marginLeft="3dp"
-            android:background="@android:color/holo_blue_dark"/>
+            android:background="#FF018786"/>
 
     </LinearLayout>
 
@@ -90,14 +90,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.85"
-            android:background="@android:color/holo_green_dark"/>
+            android:background="@android:color/darker_gray"/>
         <TextView
             android:id="@+id/BodoviCetrvtoPitanje"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:layout_marginLeft="3dp"
-            android:background="@android:color/holo_blue_dark"/>
+            android:background="#FF018786"/>
 
     </LinearLayout>
 
@@ -114,14 +114,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.85"
-            android:background="@android:color/holo_green_dark"/>
+            android:background="@android:color/darker_gray"/>
         <TextView
             android:id="@+id/BodoviPetoPitanje"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:layout_marginLeft="3dp"
-            android:background="@android:color/holo_blue_dark"/>
+            android:background="#FF018786"/>
 
     </LinearLayout>
 
@@ -138,14 +138,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.85"
-            android:background="@android:color/holo_green_dark"/>
+            android:background="@android:color/darker_gray"/>
         <TextView
             android:id="@+id/BodoviSestoPitanje"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:layout_marginLeft="3dp"
-            android:background="@android:color/holo_blue_dark"/>
+            android:background="#FF018786"/>
 
     </LinearLayout>
 
@@ -162,14 +162,14 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.85"
-            android:background="@android:color/holo_green_dark"/>
+            android:background="@android:color/darker_gray"/>
         <TextView
             android:id="@+id/BodoviSedmoPitanje"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:layout_marginLeft="3dp"
-            android:background="@android:color/holo_blue_dark"/>
+            android:background="#FF018786"/>
 
     </LinearLayout>
 

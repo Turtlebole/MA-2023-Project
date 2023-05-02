@@ -9,6 +9,6 @@ public class KorakPoKorak extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_korak_po_korak);
+        setContentView(R.layout.fragment_korakpokorak_window);
     }
 }

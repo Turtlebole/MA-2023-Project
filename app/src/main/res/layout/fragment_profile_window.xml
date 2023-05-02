@@ -57,41 +57,58 @@
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp">
 
-        <ImageView
+        <Button
             android:id="@+id/picture1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/koznazna"/>
 
-        <ImageView
+        <Button
             android:id="@+id/picture2"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/spojnice"/>
 
-        <ImageView
+        <Button
             android:id="@+id/picture3"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/asocijacije"/>
 
-        <ImageView
+        <Button
             android:id="@+id/picture4"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/skocko"/>
 
-        <ImageView
+        <Button
             android:id="@+id/picture5"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/korakpokorak"/>
 
-        <ImageView
+        <Button
             android:id="@+id/picture6"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/mojbroj"/>
     </GridLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="411dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="676dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Button"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="MENU" />
+
 
 </RelativeLayout>
