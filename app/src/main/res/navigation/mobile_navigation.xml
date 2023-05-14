@@ -2,24 +2,19 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    android:id="@+id/mobile_navigation">
 
-    <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.mobilneprojekat.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.mobilneprojekat.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.mobilneprojekat.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+    <activity
+        android:id="@+id/profile"
+        android:name="com.example.mobilneprojekat.Profile"
+        android:label="Profile" />
+    <activity
+        android:id="@+id/weeklyLeaderboard"
+        android:name="com.example.mobilneprojekat.WeeklyLeaderboard"
+        android:label="WeeklyLeaderboard" />
+    <activity
+        android:id="@+id/friendList"
+        android:name="com.example.mobilneprojekat.FriendList"
+        android:label="fragment_friend_list_window"
+        tools:layout="@layout/fragment_friend_list_window" />
 </navigation>

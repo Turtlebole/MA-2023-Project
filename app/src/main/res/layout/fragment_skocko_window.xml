@@ -7,6 +7,7 @@
     android:background="@drawable/background"
     >
 
+
     <LinearLayout
         android:id="@+id/mainLayout"
         android:layout_width="match_parent"
@@ -491,7 +492,6 @@
         android:id="@+id/pointsLeftUser"
         android:layout_width="122dp"
         android:layout_height="wrap_content"
-        android:layout_alignParent="true"
         android:layout_alignParentBottom="true"
         android:padding="12dp"
         android:textAlignment="center"

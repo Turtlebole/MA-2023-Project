@@ -30,9 +30,6 @@
             android:name=".Asocijacije"
             android:exported="false" />
         <activity
-            android:name=".Main"
-            android:exported="false" />
-        <activity
             android:name=".Register"
             android:exported="false" />
         <activity

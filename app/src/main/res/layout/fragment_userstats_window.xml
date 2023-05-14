@@ -2,7 +2,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp"
     android:background="@drawable/background">
 
     <TextView
@@ -12,13 +11,15 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:padding="16dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="24dp"
+        android:padding="16dp"
         android:gravity="center">
 
         <ImageView
@@ -40,7 +41,8 @@
                 android:text="Bole Hmm"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                />
 
             <TextView
                 android:id="@+id/emailLabel"
@@ -67,7 +69,8 @@
         android:text="Ko zna zna"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:paddingHorizontal="16dp"/>
 
     <TextView
         android:id="@+id/igraBodovi"
@@ -76,6 +79,7 @@
         android:text="Opseg bodova: 0-100"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:paddingHorizontal="16dp"
         android:layout_marginTop="8dp"/>
 
     <TextView
@@ -85,6 +89,7 @@
         android:text="Broj odigranih partija: 0"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:paddingHorizontal="16dp"
         android:layout_marginTop="8dp"/>
 
     <TextView
@@ -94,6 +99,7 @@
         android:text="Procenat pobeda: 0%"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:paddingHorizontal="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"/>
 
@@ -110,7 +116,8 @@
         android:text="Rank"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:paddingHorizontal="16dp"/>
 
     <TextView
         android:id="@+id/trenutniRank"
@@ -119,16 +126,28 @@
         android:text="Trenutni rank: Veliki Krkan"
         android:textColor="@color/white"
         android:textSize="16sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="16dp"/>
 
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        android:layout_weight="1"
         android:indeterminate="false"
         android:max="100"
         android:progress="50"
-        style="@android:style/Widget.ProgressBar.Horizontal" />
+        android:paddingBottom="95dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="MENU"/>
 
 </LinearLayout>
