@@ -305,35 +305,7 @@
 
     </GridLayout>
 
-    <LinearLayout
-        android:id="@+id/bodoviCounter"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/pointsLeftUser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Bodovi levo"
-            android:textColor="@color/white"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
-            android:padding="16dp" />
 
-
-        <TextView
-            android:id="@+id/pointsRightUser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Bodovi desno"
-            android:textColor="@color/white"
-            android:gravity="right"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:padding="16dp" />
-    </LinearLayout>
 
 
 </LinearLayout>

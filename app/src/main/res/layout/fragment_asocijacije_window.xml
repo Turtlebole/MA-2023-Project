@@ -18,11 +18,87 @@
         app:layout_constraintTop_toTopOf="parent">
     </LinearLayout>
 
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/leftUser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp">
+
+            <ImageView
+                android:id="@+id/leftAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/leftPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightUser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:id="@+id/rightPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/rightAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="00:00"/>
+
+    </RelativeLayout>
+
     <LinearLayout
         android:id="@+id/linearAB1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="65dp"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
@@ -49,7 +125,7 @@
         android:id="@+id/linearAB2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="115dp"
         app:layout_constraintTop_toBottomOf="@id/linearAB1">
 
         <Button
@@ -76,7 +152,7 @@
         android:id="@+id/linearAB3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="165dp"
         app:layout_constraintTop_toBottomOf="@id/linearAB2">
 
         <Button
@@ -103,7 +179,7 @@
         android:id="@+id/linearAB4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="215dp"
         app:layout_constraintTop_toBottomOf="@id/linearAB3">
 
         <Button
@@ -130,7 +206,7 @@
         android:id="@+id/linearResenjeAB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="265dp"
         app:layout_constraintTop_toBottomOf="@id/linearAB4">
 
         <TextView
@@ -167,7 +243,7 @@
         android:id="@+id/solutionRowLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="315dp"
         app:layout_constraintTop_toBottomOf="@id/linearResenjeAB">
 
         <TextView
@@ -190,7 +266,7 @@
         android:id="@+id/linearResenjeCD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="360dp">
+        android:layout_marginTop="370dp">
 
         <TextView
             android:id="@+id/buttonResenjeC"
@@ -228,7 +304,7 @@
         android:id="@+id/linearCD4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="410dp">
+        android:layout_marginTop="400dp">
 
         <Button
             android:id="@+id/buttonC4"
@@ -258,7 +334,7 @@
         android:id="@+id/linearCD3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="460dp">
+        android:layout_marginTop="450dp">
 
         <Button
             android:id="@+id/buttonC3"
@@ -288,7 +364,7 @@
         android:id="@+id/linearCD2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="510dp">
+        android:layout_marginTop="500dp">
 
         <Button
             android:id="@+id/buttonC2"
@@ -314,7 +390,7 @@
         android:id="@+id/linearCD1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="560dp">
+        android:layout_marginTop="550dp">
 
         <Button
             android:id="@+id/buttonC1"
@@ -331,31 +407,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="D1"
-            android:layout_marginLeft="40dp"
             android:layout_marginRight="10dp"/>
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/pointsLeftUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bodovi levo"
-        android:textColor="@color/white"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:padding="16dp" />
-
-
-    <TextView
-        android:id="@+id/pointsRightUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bodovi desno"
-        android:textColor="@color/white"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:padding="16dp" />
 
 
 </RelativeLayout>

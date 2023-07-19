@@ -115,13 +115,12 @@
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="676dp"
         android:insetTop="0dp"
         android:insetBottom="0dp"
         android:text="Button"
-        tools:text="MENU"
-        />
+        tools:text="MENU" />
 
 
 </RelativeLayout>

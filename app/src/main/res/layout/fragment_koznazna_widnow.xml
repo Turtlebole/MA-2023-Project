@@ -160,25 +160,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="Nastavi dalje" />
-
-    <TextView
-        android:id="@+id/pointsLeftUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bodovi levo"
-        android:textColor="@color/white"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:padding="16dp" />
-
-
-    <TextView
-        android:id="@+id/pointsRightUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bodovi desno"
-        android:textColor="@color/white"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:padding="16dp" />
+    
 </RelativeLayout>

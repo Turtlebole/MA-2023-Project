@@ -19,12 +19,89 @@
         app:layout_constraintTop_toTopOf="parent">
     </LinearLayout>
 
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/leftUser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp">
+
+            <ImageView
+                android:id="@+id/leftAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/leftPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightUser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:id="@+id/rightPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/rightAvatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="00:00"/>
+
+    </RelativeLayout>
+
     <LinearLayout
         android:id="@+id/linearSkocko1"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
+        android:layout_marginTop="65dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -77,7 +154,7 @@
         android:layout_height="65dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="135dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -130,7 +207,7 @@
         android:layout_height="65dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="205dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -181,7 +258,7 @@
         android:id="@+id/linearSkocko4"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="275dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
         android:orientation="horizontal"
@@ -236,7 +313,7 @@
         android:layout_height="65dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="345dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -289,7 +366,7 @@
         android:layout_height="65dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="415dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -342,7 +419,7 @@
         android:layout_height="65dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginTop="430dp"
+        android:layout_marginTop="495dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -389,7 +466,7 @@
         android:layout_height="65dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="0dp"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="565dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -435,7 +512,7 @@
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="610dp"
+        android:layout_marginTop="675dp"
         android:layout_marginEnd="0dp"
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent">
@@ -485,28 +562,4 @@
 
     </LinearLayout>
 
-
-
-
-    <TextView
-        android:id="@+id/pointsLeftUser"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:padding="12dp"
-        android:textAlignment="center"
-        android:text="Bodovi levo"
-        android:textColor="@color/white" />
-
-
-    <TextView
-        android:id="@+id/pointsRightUser"
-        android:layout_width="122dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:padding="12dp"
-        android:textAlignment="center"
-        android:text="Bodovi desno"
-        android:textColor="@color/white" />
 </RelativeLayout>
